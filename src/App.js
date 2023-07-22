@@ -2,18 +2,13 @@ import NavBar from "./component/NavBar";
 import "./App.css";
 import React, { Component } from "react";
 import News from "./component/News";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
- } from "react-router-dom";
-
+import {BrowserRouter as Router,Switch, Route } from "react-router-dom";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-      <Router>
+        <Router>
         <NavBar/>
          <Switch>
           <Route path="/"><News pageSize={8} county = "in" category="General" /></Route>
