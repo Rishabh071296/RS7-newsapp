@@ -2,7 +2,7 @@ import NavBar from "./component/NavBar";
 import "./App.css";
 import React, { Component } from "react";
 import News from "./component/News";
-import {BrowserRouter as Router,Switch, Route } from "react-router-dom";
+import {BrowserRouter as Router,Switch, Route, } from "react-router-dom";
 
 export default class App extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class App extends Component {
         <Router> 
         <NavBar/>
          <Switch>
-          <Route path="/"><News key="General" pageSize={8} county = "in" category="General" /></Route>
+          <Route path="/"><News key="general" pageSize={8} county = "in" category="General" /></Route>
           <Route path="/Business"><News key="Business" pageSize={8} county = "in" category="Business" /></Route>
           <Route path="/Entertainment"><News key="Entertainment" pageSize={8} county = "in" category="Entertainment" /></Route>
           <Route path="/General"><News key="General" pageSize={8} county = "in" category="General" /></Route>

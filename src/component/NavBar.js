@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export class NavBar extends Component {
+
   render() {
     return (
       <div>
@@ -29,15 +30,14 @@ export class NavBar extends Component {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/">Home</Link>
-
                 </li>
-                <li className="nav-item"><Link className="nav-link" to="./Business">Business </Link></li>
-                <li className="nav-item"><Link className="nav-link" to="./Entertainment">Entertainment </Link></li>
-                <li className="nav-item"><Link className="nav-link" to="./General">General </Link></li>
-                <li className="nav-item"><Link className="nav-link" to="./Health">Health </Link></li>
-                <li className="nav-item"><Link className="nav-link" to="./Science">Science </Link></li>
-                <li className="nav-item"><Link className="nav-link" to="./Sport">Sport </Link></li>
-                <li className="nav-item"><Link className="nav-link" to="./Technology">Technology </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/Business">Business </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/Entertainment">Entertainment </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/General">General </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/Health">Health </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/Science">Science </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/Sport">Sport </Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/Technology">Technology </Link></li>
 
                </ul>
             </div>
